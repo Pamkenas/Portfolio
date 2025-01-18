@@ -5,7 +5,10 @@ import { BsInstagram, BsGithub, BsDiscord, BsTwitter, BsSteam } from "react-icon
 
 const Contact = () => {
   return (
-    <div className="py-16 bg-black text-white text-center">
+    <div className="py-16 bg-black text-white text-center relative">
+      {/* Gradient border blending with hero */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-indigo-500 to-purple-500 opacity-20"></div>
+
       <h2 className="text-2xl font-bold mb-4">Contact</h2>
       <p className="text-base mb-4">
         Have a project in mind or need a developer? Let’s connect!
@@ -21,8 +24,8 @@ const Contact = () => {
           rel="noopener noreferrer"
           className="p-[2px] relative group"
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg group-hover:opacity-80 transition duration-200"></div>
-          <div className="flex items-center justify-center w-10 h-10 bg-black rounded-lg text-white relative transition duration-200 hover:bg-transparent">
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full group-hover:opacity-80 transition duration-200"></div>
+          <div className="flex items-center justify-center w-12 h-12 bg-black rounded-full text-white relative transition duration-200 hover:bg-transparent">
             <BsInstagram size={20} />
           </div>
         </a>
@@ -32,8 +35,8 @@ const Contact = () => {
           rel="noopener noreferrer"
           className="p-[2px] relative group"
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg group-hover:opacity-80 transition duration-200"></div>
-          <div className="flex items-center justify-center w-10 h-10 bg-black rounded-lg text-white relative transition duration-200 hover:bg-transparent">
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full group-hover:opacity-80 transition duration-200"></div>
+          <div className="flex items-center justify-center w-12 h-12 bg-black rounded-full text-white relative transition duration-200 hover:bg-transparent">
             <BsGithub size={20} />
           </div>
         </a>
@@ -43,8 +46,8 @@ const Contact = () => {
           rel="noopener noreferrer"
           className="p-[2px] relative group"
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg group-hover:opacity-80 transition duration-200"></div>
-          <div className="flex items-center justify-center w-10 h-10 bg-black rounded-lg text-white relative transition duration-200 hover:bg-transparent">
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full group-hover:opacity-80 transition duration-200"></div>
+          <div className="flex items-center justify-center w-12 h-12 bg-black rounded-full text-white relative transition duration-200 hover:bg-transparent">
             <BsDiscord size={20} />
           </div>
         </a>
@@ -54,8 +57,8 @@ const Contact = () => {
           rel="noopener noreferrer"
           className="p-[2px] relative group"
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg group-hover:opacity-80 transition duration-200"></div>
-          <div className="flex items-center justify-center w-10 h-10 bg-black rounded-lg text-white relative transition duration-200 hover:bg-transparent">
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full group-hover:opacity-80 transition duration-200"></div>
+          <div className="flex items-center justify-center w-12 h-12 bg-black rounded-full text-white relative transition duration-200 hover:bg-transparent">
             <BsTwitter size={20} />
           </div>
         </a>
@@ -65,8 +68,8 @@ const Contact = () => {
           rel="noopener noreferrer"
           className="p-[2px] relative group"
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg group-hover:opacity-80 transition duration-200 "></div>
-          <div className="flex items-center justify-center w-10 h-10 bg-black rounded-lg text-white relative transition duration-200 hover:bg-transparent">
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full group-hover:opacity-80 transition duration-200"></div>
+          <div className="flex items-center justify-center w-12 h-12 bg-black rounded-full text-white relative transition duration-200 hover:bg-transparent">
             <BsSteam size={20} />
           </div>
         </a>
