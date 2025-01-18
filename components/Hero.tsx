@@ -55,12 +55,12 @@ const Hero = () => {
           {triggerTypewriter ? (
             <TypewriterEffect
               words={[
-                { text: "I'm ", className: "text-blue-500" },
+                { text: "I'm ", className: "text-indigo-500" },
                 { text: "a Full ", className: "text-white" },
                 { text: "Stack Developer.", className: "text-gray-400" },
               ]}
               className="text-4xl font-bold text-left leading-snug"
-              cursorClassName="bg-blue-500"
+              cursorClassName="bg-indigo-500"
             />
           ) : (
             <h3 className="text-4xl font-bold mb-6 text-white text-left leading-snug opacity-50">
@@ -68,9 +68,9 @@ const Hero = () => {
             </h3>
           )}
           <p className="text-left text-lg text-gray-400 mb-8 leading-relaxed">
-            Currently, I'm studying at <span className="text-blue-400">KITM</span> school.
+            Currently, I'm studying at <span className="text-indigo-400">KITM</span> school.
           </p>
-          <blockquote className="max-w-3xl text-gray-500 italic text-base text-left border-l-4 border-blue-400 pl-4">
+          <blockquote className="max-w-3xl text-gray-500 italic text-base text-left border-l-4 border-indigo-400 pl-4">
             "I'm a passionate Full Stack Developer with a strong foundation in building scalable, 
             user-centric web applications. Currently, I'm sharpening my skills and expanding my expertise at KITM school."
           </blockquote>

@@ -1,6 +1,4 @@
 import { Config } from "tailwindcss";
-const svgToDataUri = require("mini-svg-data-uri");
-const colors = require("tailwindcss/colors");
 const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
 
 const config: Config = {
@@ -22,12 +20,14 @@ const config: Config = {
     },
     extend: {
       colors: {
-        black: {
-          DEFAULT: "#000",
-          100: "#000319",
-          200: "rgba(17, 25, 40, 0.75)",
-          300: "rgba(255, 255, 255, 0.125)",
+        colors: {
+          indigo: {
+            DEFAULT: "#6366F1",
+            500: "#6366F1",
+            600: "#4F46E5",
+          },
         },
+        
         white: {
           DEFAULT: "#FFF",
           100: "#BEC1DD",

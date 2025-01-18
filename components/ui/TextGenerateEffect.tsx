@@ -40,12 +40,12 @@ export const TextGenerateEffect = ({
             {line.split(" ").map((word, wordIdx) => (
               <motion.span
                 key={`${word}-${wordIdx}`}
-                className={`${
-                  lineIdx === highlightLineIndex &&
-                  (word === "Full-Stack" || word === "Jr." || word === "Developer")
-                    ? "text-purple"
+                className={`${lineIdx === highlightLineIndex &&
+                    (word === "Full-Stack" || word === "Jr." || word === "Developer")
+                    ? "text-indigo-500"
                     : "dark:text-white text-black"
-                } opacity-0`}
+
+                  } opacity-0`}
               >
                 {word}{" "}
               </motion.span>
