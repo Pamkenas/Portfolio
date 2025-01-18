@@ -1,5 +1,11 @@
 ## Getting Started
 
+Clone this with:
+```bash
+git clone https://github.com/Pamkenas/Portfolio
+```
+Then make sure you are in Portfolio file then,
+
 Open terminal and download these modules:
 Command-: 
 
