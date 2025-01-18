@@ -8,13 +8,13 @@ export const TextGenerateEffect = ({
   className,
   filter = true,
   duration = 0.5,
-  highlightLineIndex = -1, // Add an index to specify which line should be highlighted
+  highlightLineIndex = -1,
 }: {
   words: string[];
   className?: string;
   filter?: boolean;
   duration?: number;
-  highlightLineIndex?: number; // New prop to specify which line gets purple text
+  highlightLineIndex?: number;
 }) => {
   const [scope, animate] = useAnimate();
 
