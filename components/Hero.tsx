@@ -36,7 +36,7 @@ const Hero = () => {
           />
           <TextGenerateEffect
             className="text-center text-[42px] md:text-5xl lg:text-6xl font-bold leading-tight text-white"
-            words={["Hello! I am", "Full-Stack Jr. Developer"]}
+            words={["Hello! I am Povilas", "Full-Stack Jr. Developer"]}
             highlightLineIndex={1}
           />
           <p className="text-center md:tracking-wide mt-4 text-sm md:text-lg lg:text-xl text-gray-300">
