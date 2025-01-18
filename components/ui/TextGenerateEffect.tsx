@@ -8,11 +8,13 @@ export const TextGenerateEffect = ({
   className,
   filter = true,
   duration = 0.5,
+  highlightLineIndex = -1, // Add an index to specify which line should be highlighted
 }: {
   words: string[];
   className?: string;
   filter?: boolean;
   duration?: number;
+  highlightLineIndex?: number; // New prop to specify which line gets purple text
 }) => {
   const [scope, animate] = useAnimate();
 
@@ -33,15 +35,14 @@ export const TextGenerateEffect = ({
   const renderWords = () => {
     return (
       <motion.div ref={scope}>
-        {words.map((line, idx) => (
-          <div key={idx} className="block text-center">
+        {words.map((line, lineIdx) => (
+          <div key={lineIdx} className="block text-center">
             {line.split(" ").map((word, wordIdx) => (
               <motion.span
                 key={`${word}-${wordIdx}`}
                 className={`${
-                  word === "Full-Stack" ||
-                  word === "Jr." ||
-                  word === "Developer"
+                  lineIdx === highlightLineIndex &&
+                  (word === "Full-Stack" || word === "Jr." || word === "Developer")
                     ? "text-purple"
                     : "dark:text-white text-black"
                 } opacity-0`}

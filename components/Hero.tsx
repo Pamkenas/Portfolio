@@ -16,20 +16,19 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[80vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamix Web Magic with next.js
-          </h2>
+          <TextGenerateEffect
+            className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-90"
+            words={["Dynamix Web Magic with next.js and aceternity!"]}
+          />
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words={[
-              "Hello! I am Povilas and I'm",
-              "Full-Stack Jr. Developer",
-            ]}
+            words={["Hello! I am Povilas and I'm", "Full-Stack Jr. Developer"]}
+            highlightLineIndex={1}
           />
-
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            A Next.js Developer based in Lithuania.
-          </p>
+          <TextGenerateEffect
+            className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl"
+            words={["A Next.js Developer based in Lithuania."]}
+          />
         </div>
       </div>
     </div>
