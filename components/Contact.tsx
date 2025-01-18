@@ -65,7 +65,7 @@ const Contact = () => {
           rel="noopener noreferrer"
           className="p-[2px] relative group"
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg group-hover:opacity-80 transition duration-200"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg group-hover:opacity-80 transition duration-200 "></div>
           <div className="flex items-center justify-center w-10 h-10 bg-black rounded-lg text-white relative transition duration-200 hover:bg-transparent">
             <BsSteam size={20} />
           </div>
