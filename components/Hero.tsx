@@ -19,7 +19,7 @@ const Hero = () => {
   }, [isInView]);
 
   return (
-    <div className="pb-24 pt-36 relative bg-gradient-to-b from-black to-gray-900">
+    <div className="pb-24 pt-28 relative bg-gradient-to-b from-black to-gray-900">
       <div>
         <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-[60vh] opacity-40" fill="white" />
         <Spotlight className="-top-10 left-full h-[50vh] w-[40vw] opacity-50" fill="purple" />
@@ -28,7 +28,7 @@ const Hero = () => {
 
       <BackgroundBeams className="absolute inset-0 z-0 opacity-30 will-change-transform" />
 
-      <div className="flex justify-center relative my-40 z-10">
+      <div className="flex justify-center relative my-32 z-10">
         <div className="max-w-[90vw] md:max-w-3xl lg:max-w-[70vw] flex flex-col items-center">
           <TextGenerateEffect
             className="uppercase tracking-[0.3em] text-xs text-center text-blue-200"
@@ -45,7 +45,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="my-40" />
+      <div className="my-80" />
 
       <div className="flex justify-center relative my-40 z-10">
         <div
