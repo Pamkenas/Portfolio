@@ -51,5 +51,3 @@ Wait for the website will be Complited
 * postcss@^8
 * tailwindcss@^3.4.1
 * typescript@^5
-
-idk, gal laggins sory
