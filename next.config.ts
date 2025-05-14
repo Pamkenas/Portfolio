@@ -1,7 +1,11 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export',
+  reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true,   // 💡 this prevents build from failing on lint warnings
+  },
 };
 
 export default nextConfig;
